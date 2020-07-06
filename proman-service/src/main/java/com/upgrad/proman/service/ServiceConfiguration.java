@@ -8,7 +8,7 @@ import javax.persistence.Entity;
 
 @Configuration
 @ComponentScan("com.upgrad.proman.service")
-@EntityScan("com.uprgad.proman.service.entity")
+@EntityScan("com.uprgad.proman.service.entity") //it only declares the classes to be used by persistence context
 
 public class ServiceConfiguration {
 

@@ -10,7 +10,7 @@ import javax.persistence.PersistenceContext;
 @Repository
 public class UserDao {
     @PersistenceContext
-    EntityManager em;
+    private EntityManager em;
     public UserEntity createUser(UserEntity userEntity)
     {
         em.persist(userEntity);

@@ -1,8 +1,5 @@
 package com.upgrad.proman.service.entity;
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
+import org.apache.commons.lang3.builder.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.Max;
@@ -44,7 +41,7 @@ import java.time.ZonedDateTime;
 
 
         @Column(name = "PASSWORD")
-       // @ToStringExclude
+         @ToStringExclude
         private String password;
 
         @Column(name = "FIRST_NAME")
@@ -80,7 +77,7 @@ import java.time.ZonedDateTime;
         @Column(name = "SALT")
         @NotNull
         @Size(max = 200)
-        //@ToStringExclude
+        @ToStringExclude
         private String salt;
 
         @Version
